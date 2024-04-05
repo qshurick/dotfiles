@@ -73,3 +73,13 @@ function select_commit_for_file() {
 alias gfixup="git_auto_fixup_files"
 alias gqfixup="git_auto_fixup_files 1"
 
+# Show list of recent branches
+function git_list_of_last_branches() {
+    git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf("%s: %s\n", substr($2, 1, length($2)-1), $1)}'
+}
+
+alias glast="git_list_of_last_branches"
+
+# Accept changes and move on (interactive rebase)
+alias gy="ga . && gcn! && grbc"
+
