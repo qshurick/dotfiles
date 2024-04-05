@@ -83,3 +83,12 @@ alias glast="git_list_of_last_branches"
 # Accept changes and move on (interactive rebase)
 alias gy="ga . && gcn! && grbc"
 
+# ########################################################################### #
+# docker aliases and helpers                                                  #
+# ########################################################################### #
+
+# remove all stopped containers
+alias dcca="docker container ls -aq | xargs -I {} docker container rm {}"
+# stop all constainers
+alias dcsa="docker container ls -q | xargs -I {} docker container stop {}"
+
