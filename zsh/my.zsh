@@ -12,7 +12,7 @@ source $ZSH/oh-my-zsh.sh
 # Other scripts                                                               #
 # ########################################################################### #
 
-source ./docker-database.zsh
+source ${0:a:h}/docker-database.zsh
 
 # ########################################################################### #
 # custom git functions                                                        #
