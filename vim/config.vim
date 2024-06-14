@@ -58,8 +58,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-L> <C-W><C-L>
 
-set previewpopup=height:10,width:60
-
 " copy current file name
 map <C-C> :let @" = expand("%:p")<CR>
 
