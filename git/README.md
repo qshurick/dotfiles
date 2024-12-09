@@ -2,11 +2,7 @@
 
 ## Howo to setup several git profiles on the same machine
 
-This might be useful in case it is needed to use different profiles to work on
-different projects, e.g. work/personal, or for different clients. This
-information is based on
-[this](https://www.freecodecamp.org/news/how-to-handle-multiple-git-configurations-in-one-machine/)
-article.
+This might be useful in case it is needed to use different profiles to work on different projects, e.g. work/personal, or for different clients. This information is based on [this](https://www.freecodecamp.org/news/how-to-handle-multiple-git-configurations-in-one-machine/) article.
 
 As many tools, git is aware of `$XDG_CONFIG_HOME/git/config`, and will read
 this configuration.
