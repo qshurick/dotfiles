@@ -3,6 +3,8 @@ syntax on
 colorscheme everforest
 set background=dark
 
+" hello, world!
+
 
 " nice looking stuff
 set showbreak=↪\
