@@ -1,2 +1,18 @@
 [includeIf "gitdir:~/projects"]
     path=~/.config/git/qshurick-config
+[diff "json"]
+	textconv = jq .
+[diff "markdown"]
+    textconv = pandoc --to=plain
+[diff]
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+[push]
+    default = simple
+    autoSetupRemote = true
+[commit]
+    verbose = true
+[rerere]
+    enabled = true
+    autoupdate = true
