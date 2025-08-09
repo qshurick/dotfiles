@@ -34,14 +34,6 @@ set path+=**
 " display all matching files when we tab complete
 set wildmenu
 
-" file browser, :edit dir
-let g:netrw_banner=0
-let g:netrw_browse_split=4
-let g:netrw_ltc=1
-let g:netrw_liststyle=3
-let g:netrw_list_hide=netrw_gitignore#Hide()
-let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-
 " nnoremap ,php :-1read ~/.vim/.class_teamplate.php<CR>4j2wviw
 
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
